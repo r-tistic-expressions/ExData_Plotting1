@@ -1,6 +1,5 @@
 ## Load Packages and Data
 library(data.table)
-setwd("~/Documents/R Files/Hopkins - Coursera Data Science/Exploratory Data Analysis")
 data <- read.table('household_power_consumption.txt'
                    ,sep=";", header=TRUE)
 
@@ -37,7 +36,7 @@ plot(sub_data$Date_Time, sub_data$Voltage
 
 ## Plot 3
 plot(sub_data$Date_Time, sub_data$Sub_metering_1
-     , ylab="Global Active Power (kilowatts)"
+     , ylab="Energy Sub Metering"
      , type="l"
      , xlab="datetime")
 lines(sub_data$Date_Time, sub_data$Sub_metering_2, col="red", type="l")

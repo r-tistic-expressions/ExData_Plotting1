@@ -1,6 +1,5 @@
 ## Load Packages and Data
 library(data.table)
-setwd("~/Documents/R Files/Hopkins - Coursera Data Science/Exploratory Data Analysis")
 data <- read.table('household_power_consumption.txt'
                    ,sep=";", header=TRUE)
 
